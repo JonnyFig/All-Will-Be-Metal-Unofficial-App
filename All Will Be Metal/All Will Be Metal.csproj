@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF860795-0DB1-4370-B9C6-360DF7575530}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>All_Will_Be_Metal</RootNamespace>
+    <AssemblyName>All Will Be Metal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>C:\Users\Jonny\Documents\Metal\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Condition.cs" />
+    <Compile Include="ControlConfirmationBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlConfirmationBox.Designer.cs">
+      <DependentUpon>ControlConfirmationBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpMessage.Designer.cs">
+      <DependentUpon>PopUpMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetUltronMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetUltronMessage.Designer.cs">
+      <DependentUpon>ResetUltronMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ultron.cs" />
+    <EmbeddedResource Include="ControlConfirmationBox.resx">
+      <DependentUpon>ControlConfirmationBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpMessage.resx">
+      <DependentUpon>PopUpMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetUltronMessage.resx">
+      <DependentUpon>ResetUltronMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MapBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltronIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtremisConsole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeBase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ultron Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlankDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CriticalDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FailureDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HitDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WildDie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltronDefend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltronAttack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtremisConsoleCrisisTeam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtremisConsoleUltron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\You%27reBotheringMe.wav" />
+    <None Include="Resources\YourUnbearablyNiave.wav" />
+    <None Include="Resources\BecauseOfYou_Win.wav" />
+    <Content Include="Resources\BlankDie_Crit.png" />
+    <None Include="Resources\YouRiseOnlyToFall_Lose.wav" />
+    <None Include="Resources\YouveWoundedMe.wav" />
+    <None Include="Resources\GameOverPicture.jpg" />
+    <None Include="Resources\ThisIsPeaceInMyTime.wav" />
+    <None Include="Resources\ThisIsHowYouEnd.wav" />
+    <None Include="Resources\WhenTheySeeTheyUnderstand.wav" />
+    <None Include="Resources\LeaveMeAlone.wav" />
+    <None Include="Resources\WhatIsThisPlace.wav" />
+    <None Include="Resources\HowIsHumanitySaved_Win.wav" />
+    <None Include="Resources\TypicalOfHumans.wav" />
+    <None Include="Resources\EvenYouCantStopThat.wav" />
+    <None Include="Resources\HowCanYouStopMe.wav" />
+    <None Include="Resources\CitizenKilled.wav" />
+    <None Include="Resources\The_Last_One.png" />
+    <None Include="Resources\Laboratory.jpg" />
+    <None Include="Resources\Laboratory2.jpg" />
+    <Content Include="Resources\WildDie_Crit.png" />
+    <None Include="Resources\Arrow.png" />
+    <None Include="Resources\UltronIcon_Damaged.jpg" />
+    <None Include="Resources\UltronIcon1.jpg" />
+    <None Include="Resources\MapBackground1.png" />
+    <None Include="Resources\MetalBackground.jpg" />
+    <None Include="Resources\AvengersBackground.jpg" />
+    <Content Include="Resources\Audio\Blast.wav" />
+    <Content Include="Resources\Audio\ButtonClick.wav" />
+    <Content Include="Resources\Audio\DeviceActivate.wav" />
+    <Content Include="Resources\Audio\DiceRoll.wav" />
+    <Content Include="Resources\Audio\HitUltron.wav" />
+    <Content Include="Resources\Audio\Rage.wav" />
+    <Content Include="Resources\Audio\Scream.wav" />
+    <Content Include="Resources\Audio\Select.wav" />
+    <Content Include="Resources\Audio\Splash screen.wav" />
+    <Content Include="Resources\Audio\Tallons.wav" />
+    <Content Include="Resources\Audio\Thank You.wav" />
+    <Content Include="Resources\Audio\Ultron_Hurt.wav" />
+    <None Include="Resources\Backdrop.jpg" />
+    <None Include="Resources\Background.jpg" />
+    <None Include="Resources\Background2.jpg" />
+    <None Include="Resources\DoomsdayDevice.wav" />
+    <None Include="Resources\UltronAttack2.jpg" />
+    <Content Include="Resources\BlockDie_Crit.png" />
+    <Content Include="Resources\CriticalDie_Crit.png" />
+    <Content Include="Resources\FailureDie_Crit.png" />
+    <Content Include="Resources\HitDie_Crit.png" />
+    <Content Include="Resources\Power_Crit.png" />
+    <Content Include="Resources\UltronSuffer.jpg" />
+    <None Include="Resources\UltronSuffer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
