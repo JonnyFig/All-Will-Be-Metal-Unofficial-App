@@ -1,0 +1,13 @@
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All Will Be Metal.csprojAssemblyReference.cache
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All_Will_Be_Metal.Form1.resources
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All_Will_Be_Metal.Properties.Resources.resources
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All Will Be Metal.csproj.GenerateResource.cache
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All Will Be Metal.csproj.CoreCompileInputs.cache
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\bin\Debug\All Will Be Metal.exe.config
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\bin\Debug\All Will Be Metal.exe
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\bin\Debug\All Will Be Metal.pdb
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All Will Be Metal.exe
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All Will Be Metal.pdb
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All_Will_Be_Metal.ControlConfirmationBox.resources
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All_Will_Be_Metal.PopUpMessage.resources
+C:\Users\Jonny\source\repos\All Will Be Metal\All Will Be Metal\obj\Debug\All_Will_Be_Metal.ResetUltronMessage.resources
